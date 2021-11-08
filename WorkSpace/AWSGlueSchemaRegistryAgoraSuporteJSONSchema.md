@@ -1,0 +1,11 @@
+# AWS Glue Schema Registry agora com suporte ao JSON Schema
+
+Publicado: Jun 30, 2021
+
+O [AWS Glue Schema Registry](https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html) agora oferece suporte à definição de esquemas no formato JSON Schema, além do Apache Avro, permitindo que os clientes que escolhem o JSON Schema como formato para seus dados de streaming controlem centralmente a evolução dos streams de dados e evitem ter que gerenciar seus próprios registros. Por meio de serializadores e desserializadores licenciados pelo Apache, o Glue Schema Registry se integra a aplicações Java desenvolvidas para o Apache Kafka/[Amazon Managed Streaming for Apache Kafka](https://aws.amazon.com/pt/msk/) (Amazon MSK), [Amazon Kinesis Data Streams](https://aws.amazon.com/pt/kinesis/data-streams/), Apache Flink/[Amazon Kinesis Data Analytics for Apache Flink](https://aws.amazon.com/pt/kinesis/data-analytics/) e [AWS Lambda](https://aws.amazon.com/pt/lambda/).
+
+O AWS Glue Schema Registry, um recurso sem servidor do [AWS Glue](https://aws.amazon.com/pt/glue/), permite validar e controlar a evolução dos dados de streaming usando esquemas registrados nos formatos de dados Apache Avro e JSON Schema, sem custo adicional. Os esquemas definem a estrutura e o formato dos registros de dados (também conhecidos como eventos) produzidos pelas aplicações. Quando as aplicações de produção de dados adicionam ou removem campos de um esquema, a qualidade dos dados pode ser comprometida e as aplicações downstream podem ser afetadas. Usando o Glue Schema Registry, você pode reduzir as falhas de aplicações downstream, pois os esquemas usados para produção de dados são validados em relação a esquemas dentro de um registro central, permitindo que você controle centralmente a qualidade dos dados. 
+
+Com o suporte recém-adicionado ao formato de dados do JSON Schema, os clientes que usam o esquema JSON agora podem se beneficiar com os mesmos controles de validação e evolução oferecidos no Glue Schema Registry para esquemas Apache Avro. O Glue Schema Registry é compatível com os rascunhos 4, 6, 7 do JSON Schema.
+
+O JSON Schema tem suporte em todas as regiões da AWS em que o Glue Schema Registry está disponível. Leia a [documentação](https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html) do Glue Schema Registry para saber mais e começar. 
